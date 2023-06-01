@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 21% auto 11%;
+    min-height: 100vh;
+    justify-content: stretch;
+    margin: auto;gap: .2rem;
+}
+.caja{
+    text-align: center;
+    display: flex;
+
+    color: white;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+    top: 0;
+    transition: 0.7s;
+}
+
+.header.bajar {
+    background-color: #ffffff;
+    position: fixed;
+    transition: 0.7s;
+    margin: 20px;
+
+}
+.bajar img{
+    width: 0px;
+    height: 0px;
+}
+.header a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+    color: #000;
+}
+
+.header li {
+    list-style: none;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+    padding: 12px;
+}
+
+.grande{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-direction: row;
+    color: black;
+    margin-left: 30px;
+    width: 100%;
+}
+
+.color{
+    padding: 50px 10px ;
+    background-color: rgb(205, 205, 205);
+    border-radius: 30px;
+}
+
+.c1{
+    background-color: white;
+    grid-column: 1/4;
+}
+
+.c3{
+    background-color: white;
+    grid-column:1/4;
+}
+.c4{
+    grid-column: 1/4;
+    background-color: rgb(228, 50, 109);
+}
+
+.uno{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.dos{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.primer_parrafo{
+    color: black;
+    font-size: 1.9rem;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.parrafouno{
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.titulo3{
+    margin-top: 30px;
+
+}
+
+.imagen{
+    width: 40%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img{
+    width: 350px;
+    height: 350px;
+    
+}
+
+@media screen and (max-width:511px) {
+    .div{
+        display: grid;
+        grid-template-columns: auto;
+    grid-auto-rows: .7fr 4.4fr 2.5fr .5fr ;
+
+    }
+
+    .c1{
+    background-color: green;
+    grid-column: 1/2;
+}
+.c2{
+    background-color: rgb(6, 47, 161);
+    grid-column: 1/2;
+}
+.c3{
+    background-color: rgb(90, 128, 0);
+}
+.c4{
+    grid-column: 1/2;
+    background-color: rgb(228, 50, 109);
+}
+    
+}
